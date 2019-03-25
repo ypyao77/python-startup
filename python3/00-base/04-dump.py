@@ -40,5 +40,3 @@ print('Run: {0[Run]:d}; Google: {0[Google]:d}; JD: {0[JD]:d}'.format(table))
 
 # 也可以通过在 table 变量前使用 '**' 来实现相同的功能
 print('Run: {Run:d}; Google: {Google:d}; JD: {JD:d}'.format(**table))
-
-
