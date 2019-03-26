@@ -30,3 +30,4 @@ mc.execute(sql)
 for x in mc:
     print(x)
 
+mydb.close()
