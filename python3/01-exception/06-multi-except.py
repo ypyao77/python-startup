@@ -42,7 +42,7 @@ def f1():
 def f2():
     try:
         raise KeyboardInterrupt
-    except e:
+    except Exception as e:
         print("get an exception: ", e)
     finally:
         print('Goodbye, world!')
