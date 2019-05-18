@@ -10,6 +10,7 @@ from abc import ABC, abstractmethod
 from collections import namedtuple
 
 
+# 实现 Order 类， 支持插入式折扣策略
 Customer = namedtuple('Customer', 'name fidelity')
 
 class LineItem:
