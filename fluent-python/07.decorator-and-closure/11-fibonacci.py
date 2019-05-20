@@ -1,8 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
-# 生成第 n 个斐波纳契数， 递归方式非常耗时
-
+# 使用缓存实现， 速度更快
 import time, functools
 from clockdeco import clock
 
@@ -17,7 +16,10 @@ def fibonacci(n):
         return n
 
     return fibonacci(n-2) + fibonacci(n-1)
+
 # 这样一来， 执行时间减半了， 而且 n 的每个值只调用一次函数
+
+# 把 @d1 和 @d2 两个装饰器按顺序应用到 f 函数上， 作用相当于 f = d1(d2(f))。
 
 if __name__=='__main__':
     print(fibonacci(6))

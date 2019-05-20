@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-#!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 
 # ❶ registry 保存被 @register 装饰的函数引用
@@ -11,7 +10,7 @@ def register(func):
     print('running register(%s)' % func)
 
     # ❹ 把 func 存入 registry
-    registry.append(func) 
+    registry.append(func)
 
     # ❺ 返回 func： 必须返回函数； 这里返回的函数与通过参数传入的一样。
     return func
@@ -20,6 +19,7 @@ def register(func):
 @register
 def f1():
     print('running f1()')
+
 @register
 def f2():
     print('running f2()')
@@ -32,9 +32,11 @@ def f3():
 def main():
     print('running main()')
     print('registry ->', registry)
+
     f1()
     f2()
     f3()
+
 
 if __name__=='__main__':
     main()

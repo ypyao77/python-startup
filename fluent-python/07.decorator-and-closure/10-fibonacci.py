@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 
 # 生成第 n 个斐波纳契数， 递归方式非常耗时
-
 import time
 from clockdeco import clock
 
